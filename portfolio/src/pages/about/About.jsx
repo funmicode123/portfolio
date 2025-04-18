@@ -6,7 +6,7 @@ function About() {
   return (
     <div id = "about" className={styles.about}>
       <div  className={styles.About}>
-        <h1><Strong>About Me</Strong>  </h1>
+        <h1>About Me</h1>
         <p>Hi, my name is <strong>Sanni Funmilola Leah</strong>. I’m a highly motivated and detail-oriented Front-end Engineer skilled in technologies like HTML, CSS, JavaScript, 
           and proficient in React. I also have experience with back-end development using Java and Python, leveraging frameworks such as Spring Boot, Flask, and Django.
           I specialize in designing RESTful APIs and building scalable, user-centric web applications. 
@@ -18,6 +18,7 @@ function About() {
           I am passionate about staying current with both trends and pushing the boundaries of what's possible on the web.
         </p>
       </div>
+      
 
       <div className={styles.Quality}>
         <Link to= "/skills">Skills</Link>
