@@ -1,10 +1,20 @@
 import React, { useState } from 'react';
 import styles from '../project/Project.module.css';
 
-const github = import.meta.env.VITE_ESTATE_GIT_URL;
+const estate_git = import.meta.env.VITE_ESTATE_GIT_URL;
 const frontend = import.meta.env.VITE_FRONT_END_URL;
+const contact_git = import.meta.env.VITE_CONTACT_GIT_URL;
+const movie_git = import.meta.env.VITE_MOVIE_GIT_URL;
 
 const projects = [
+  {
+    title: 'Movie App',
+    description: `Movie App is a React-based application that integrates with external movie APIs (like TMDb) to deliver real-time movie data. 
+    It allows users to search films, view detailed info, watch trailers, and maintain a personal watchlist — all in a sleek and responsive UI.`,
+    github: movie_git,
+    // page: frontend,
+  },
+  
   {
     title: 'Estate Management App',
     description: `Estate Management App is a seamless and efficient solution designed to simplify estate operations. 
@@ -14,24 +24,18 @@ const projects = [
     - Generate visitor codes: Residents can generate valid, time-bound codes for their visitors.
     - Track visitors: Ensure security by tracking visitors from entry to the respective residents.
     - Monitor security personnel: Maintain accountability by recording which security staff are on duty during each shift.`,
-    github: github,
-    page: frontend,
+    github: estate_git,
+    // page: frontend,
   },
   {
     title: 'Contact Management App',
     description: `Contact Management App is a professional tool designed to streamline how businesses manage client 
     and team contacts. It allows easy storage, quick search, and real-time updates of essential contact details—ensuring seamless communication 
     and organized networking.`,
-    github: github,
-    page: frontend,
-  },
-  {
-    title: 'Movie App',
-    description: `Movie App is a React-based application that integrates with external movie APIs (like TMDb) to deliver real-time movie data. 
-    It allows users to search films, view detailed info, watch trailers, and maintain a personal watchlist — all in a sleek and responsive UI.`,
-    github: github,
-    page: frontend,
+    github: contact_git,
+    // page: frontend,
   }
+  
 ];
 
 function Project() {
