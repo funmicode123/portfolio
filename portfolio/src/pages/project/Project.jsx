@@ -14,7 +14,7 @@ const projects = [
     github: movie_git,
     // page: frontend,
   },
-  
+
   {
     title: 'Estate Management App',
     description: `Estate Management App is a seamless and efficient solution designed to simplify estate operations. 
@@ -76,9 +76,9 @@ function Project() {
                   <a href={project.github} target="_blank" rel="noopener noreferrer">
                     <button>GitHub Link</button>
                   </a>
-                  <a href={project.page} target="_blank" rel="noopener noreferrer">
+                  {/* <a href={project.page} target="_blank" rel="noopener noreferrer">
                     <button>Page</button>
-                  </a>
+                  </a> */}
                 </div>
               </div>
             );
