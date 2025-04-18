@@ -1,0 +1,89 @@
+.mywork{
+  background-color: #f8f9fa;
+  margin-top: 0;
+}
+.mywork h1{
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 50px;
+  color: #334871;
+}
+.projects {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    color: white;
+}
+  
+.Project {
+    background-color: #f8f9fa;
+    color: black;
+    border-radius: 12px;
+    padding: 1.5rem;
+    width: 300px; 
+    min-height: 300px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+.Project:hover {
+    transform: translateY(-5px);
+}
+  
+.title h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    color: #02121d;
+}
+  
+.title p {
+    line-height: 1.6;
+    white-space: pre-line; 
+}
+  
+.Project div:last-child {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+}
+  
+.Project button {
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #334871;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.Project button:hover {
+    background-color: #0056b3;
+}
+ 
+  @media (max-width: 768px) {
+    .Project {
+      padding: 1.5rem;
+    }
+  
+    .Project div:last-child {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .Project button {
+      width: 100%;
+    }
+  
+    .title h2 {
+      font-size: 1.5rem;
+    }
+  }
+  

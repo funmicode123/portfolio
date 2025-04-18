@@ -1,0 +1,44 @@
+.skills {
+    padding: 2rem;
+    background-color: #f8f9fa;
+    text-align: center;
+  }
+  
+  .programingSkills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    margin-top: auto;
+    
+  }
+  
+  .customIcon {
+    width: 32px;
+    height: 32px;
+  }
+
+  @media (max-width: 768px) {
+    .programingSkills {
+      gap: 1.5rem;
+    }
+  
+    .customIcon {
+      width: 28px;
+      height: 28px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .programingSkills {
+      flex-direction: row;
+      gap: 1rem;
+      padding: 0 1rem;
+    }
+  
+    .customIcon {
+      width: 24px;
+      height: 24px;
+    }
+  }

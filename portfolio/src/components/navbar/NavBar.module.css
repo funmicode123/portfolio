@@ -1,0 +1,118 @@
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #334871;
+  padding: 1rem;
+  color: white;
+  position: relative;
+}
+
+.brand {
+  display: flex;
+  flex-direction: row;
+  color: #007bff;
+  
+}
+
+.brand h2{
+  color: aliceblue;
+}
+.soft {
+  font-weight: 400;
+}
+
+.menuButton {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.rightNavbar {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  transition: max-height 0.3s ease;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.rightNavbar a:hover {
+  background-color: #222;
+}
+
+.menuLink {
+  display: flex; 
+  gap: 1rem;
+  text-decoration: none; 
+  color: white;
+}
+
+.menuLink a {
+  text-decoration: none; 
+  color: inherit; 
+}
+
+.menuLink a:hover {
+  color: #1da1f2; 
+}
+
+.contactMeButton button {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menuButton {
+    display: block;
+  }
+
+  .rightNavbar {
+    max-height: 0;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #111;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    z-index: 999;
+  }
+
+  .menuLink {
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    align-items: center;
+  }
+
+  .menuLink a {
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    color: white;
+  }
+
+  .rightNavbar a {
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .rightNavbar.open {
+    max-height: 500px;
+    display: flex;
+  }
+
+  .contactMeButton {
+    margin-top: 1rem;
+  }
+}
