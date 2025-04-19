@@ -6,6 +6,7 @@
   .skills h1{
     display: flex;
     justify-content: center;
+    color: #334871;
   }
   .programingSkills {
     display: flex;
