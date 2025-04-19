@@ -10,6 +10,7 @@ import springboot from '../../logo/springboot.svg'
 function Skills() {
   return (
     <div id="skills" className={styles.skills}>
+      <h1>Skills</h1>
       <div className={styles.programingSkills}>
         <h4>Python</h4><FontAwesomeIcon icon={faPython} size="2x" style={{ color: "#3776AB" }} />
         <h4>Java</h4><FontAwesomeIcon icon={faJava} size="2x" style={{ color: "#007396" }} />

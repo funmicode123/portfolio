@@ -54,9 +54,9 @@ function Home() {
 
 
         <div className={styles.viewButton}>
-        <Link to="/contactMe">
-              <button>Contact</button>
-            </Link>
+          <Link to="/contactMe">
+            <button>Contact</button>
+          </Link>
         </div>
         <div className={styles.summary}>
           <h5>Dynamic and results-oriented software Developer building scalable backend systems, designing RESTful APIs, 

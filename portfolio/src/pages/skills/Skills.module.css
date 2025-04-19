@@ -3,7 +3,10 @@
     background-color: #f8f9fa;
     text-align: center;
   }
-  
+  .skills h1{
+    display: flex;
+    justify-content: center;
+  }
   .programingSkills {
     display: flex;
     flex-wrap: wrap;
