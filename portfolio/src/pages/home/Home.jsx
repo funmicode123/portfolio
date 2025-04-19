@@ -12,7 +12,7 @@ import ProfileImage from '../../assets/Profile 2.png'
 import { Link } from 'react-router-dom';
 
 const facebook = import.meta.env.VITE_FACEBOOK_URL;
-const github = import.meta.env.VITE_GITHUB_URL;
+const github = import.meta.env.VITE_PROFILE_GIT_URL;
 const instagram = import.meta.env.VITE_INSTAGRAM_URL;
 const whatsapp = import.meta.env.VITE_WHATSAPP_URL;
 const linkedIn = import.meta.env.VITE_LINKEDIN_URL;
