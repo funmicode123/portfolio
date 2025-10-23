@@ -12,7 +12,8 @@
 }
 .projects {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
     gap: 2rem;
     padding: 2rem;
     background-color: #f8f9fa;
