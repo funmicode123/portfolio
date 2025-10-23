@@ -6,6 +6,7 @@ const frontend = import.meta.env.VITE_FRONT_END_URL;
 const contact_git = import.meta.env.VITE_CONTACT_GIT_URL;
 const movie_git = import.meta.env.VITE_MOVIE_GIT_URL;
 const vla_git = import.meta.env.VITE_VLA_GIT_URL;
+const crm_git = import.meta.env.VITE_CRM_GIT_URL;
 
 const projects = [
   {
@@ -41,6 +42,14 @@ const projects = [
     description: `A professional platform built to enhance online participant engagement with facilitators. 
     It provides seamless tracking of participant involvement after each session, supports quick search, 
     and delivers real-time updates of essential chat details—ensuring smooth and effective communication.`,
+    github: vla_git,
+    // page: frontend,
+  },
+  {
+    title: 'University CRM Platform',
+    description: `A professional platform built to enhance university management and student engagement. 
+    It provides seamless tracking of student involvement after each session, supports quick search, 
+    and delivers real-time updates of essential academic details—ensuring smooth and effective communication between students and faculty.`,
     github: vla_git,
     // page: frontend,
   }
